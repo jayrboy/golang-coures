@@ -61,6 +61,8 @@ dogo.json
 
 1. Number
 
+./main.go
+
 ```go
 package main
 
@@ -100,6 +102,36 @@ My money =  1000
 2. String
 3. Boolean
 4. Array
+
+./array/array.go
+
+```go
+package main
+
+import "fmt"
+
+var productName [4]string
+var price [4]float32
+
+func main() {
+	productName[0] = "Macbook"
+	productName[1] = "iPad"
+	productName[2] = "iPhone"
+	productName[3] = "AirPods"
+	fmt.Println(productName)
+
+	price := [4]float32{40000, 30000, 20000, 10000}
+	fmt.Println(price)
+}
+```
+
+Output: Array
+
+```c
+[Macbook iPad iPhone AirPods]
+[40000 30000 20000 10000]
+```
+
 5. Slice
 6. Struct
 7. Pointer
