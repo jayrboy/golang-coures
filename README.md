@@ -56,3 +56,54 @@ dogo.json
   "Decreasing": 1
 }
 ```
+
+# Variable Types
+
+1. Number
+
+```go
+package main
+
+import "fmt"
+
+var numberInt, numberInt2 int = 1000, 2000
+
+func main() {
+	fmt.Println("Hello Golang!")
+
+	var msg string = "Hello "
+	fmt.Println(msg + "World!")
+
+	fmt.Printf("%d %d", numberInt, numberInt2) // printf("%s",variable) in c language
+
+	numberFloat := 25.4
+	fmt.Println(numberFloat)
+
+	fmt.Println(numberInt + numberInt2)
+	fmt.Println(float64(numberInt) + numberFloat)
+
+	fmt.Println("My money = ", numberInt)
+}
+```
+
+Output: Number
+
+```c
+Hello Golang!
+Hello World!
+1000 200025.4
+3000
+1025.4
+My money =  1000
+```
+
+2. String
+3. Boolean
+4. Array
+5. Slice
+6. Struct
+7. Pointer
+8. Function
+9. Interface (Class the same a c#)
+10. Map
+11. Channel
