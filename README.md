@@ -40,6 +40,7 @@ go build main.go
 https://github.com/liudng/dogo
 
 ```sh
+go install github.com/liudng/dogo@latest
 go get github.com/liudng/dogo
 ```
 
@@ -50,7 +51,7 @@ dogo.json
   "WorkingDir": ".",
   "SourceDir": ["."],
   "SourceExt": [".c", ".cpp", ".go", ".h"],
-  "BuildCmd": "go build run main.go",
+  "BuildCmd": "go build main.go",
   "RunCmd": "./main",
   "Decreasing": 1
 }
